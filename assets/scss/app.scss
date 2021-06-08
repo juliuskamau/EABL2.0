@@ -1,0 +1,174 @@
+/**font family**/
+@font-face {font-family: "Roboto-Bold";
+  src: url("../font/Roboto-Bold.eot");
+  src: url("../font/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../font/Roboto-Bold.woff2") format("woff2"),
+  url("../font/Roboto-Bold.woff") format("woff"),
+  url("../font/Roboto-Bold.ttf") format("truetype"),
+  url("../font/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {font-family: "Roboto-Light";
+  src: url("../font/Roboto-Light.eot");
+  src: url("../font/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+  url("../font/Roboto-Light.woff2") format("woff2"),
+  url("../font/Roboto-Light.woff") format("woff"),
+  url("../font/Roboto-Light.ttf") format("truetype"),
+  url("../font/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {font-family: "Roboto-Regular";
+  src: url("../font/Roboto-Regular.eot");
+  src: url("../font/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../font/Roboto-Regular.woff2") format("woff2"),
+  url("../font/Roboto-Regular.woff") format("woff"),
+  url("../font/Roboto-Regular.ttf") format("truetype"),
+  url("../font/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {font-family: "Roboto-Medium";
+  src: url("../font/Roboto-Medium.eot");
+  src: url("../font/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+  url("../font/Roboto-Medium.woff2") format("woff2"),
+  url("../font/Roboto-Medium.woff") format("woff"),
+  url("../font/Roboto-Medium.ttf") format("truetype"),
+  url("../font/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.Roboto-Regular{
+  font-family: "Roboto-Regular";
+}
+.Roboto-Light{
+  font-family: "Roboto-Light";
+}
+.Roboto-Bold{
+  font-family: "Roboto-Bold";
+}
+.Roboto-Medium{
+  font-family: "Roboto-Medium";
+}
+
+.grid-container{
+  max-width: 80rem;
+}
+
+/*==============header=================*/
+header{
+  height: 102px;
+  padding: 15px 0px;
+  .search_icon{
+    position: relative;
+    padding: 0px;
+    background: url(../img/linesearch.png);
+    height: 33px;
+    background-repeat: no-repeat;
+    width: 52px;
+    margin-top: 20px;
+    &::before{
+      content: "\f002";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: 400;
+      text-decoration: inherit;
+      color: #1a1a1a;
+      font-size: 27px;
+      position: absolute;
+      left: 20px;
+    }
+    input[type=submit]{
+      padding-left: 0;
+      background: 0 0;
+      border: none;
+      font-size: 0;
+      width: 48px;
+    }
+  }
+
+  nav{
+    padding: 20px 0px 0px 0px;
+a{
+  color: #000;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: "Roboto-Medium";
+}
+  }
+}
+
+footer.top{
+  background: #c9c9c9;
+  height: 133px;
+  line-height: 133px;
+  a{
+color: #000;
+font-size: 14px;
+font-family: "Roboto-Medium";
+text-transform: uppercase;
+  }
+  p{
+    color: #000;
+    font-size: 14px;
+    font-family: "Roboto-Medium";
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+      }
+      .social{
+float: right;
+a{
+  padding: 0px 10px 0px 0px;
+  &:last-child{
+    padding: 0px;
+  }
+  .fa{
+    font-size: 20px;
+  }
+}
+      }
+}
+
+footer.bottom{
+  height: 127px;
+  background: #000;
+  padding: 40px 0px;
+
+a{
+  color: #fff;
+  font-size: 14px;
+  font-family: "Roboto-Medium";
+  text-transform: uppercase;
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  &::after{
+    content: "|";
+    position: absolute;
+    right: -2px;
+  }
+  &:last-child{
+    &::after{
+      display: none;
+    }
+  }
+}
+p{
+  clear: both;
+  line-height: normal;
+  color: #fff;
+  font-family: "Roboto-Medium";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 20px 0px 0px 0px;
+}
+}
