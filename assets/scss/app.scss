@@ -1,77 +1,170 @@
 /**font family**/
-@font-face {font-family: "Roboto-Bold";
-  src: url("../font/Roboto-Bold.eot");
-  src: url("../font/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
-  url("../font/Roboto-Bold.woff2") format("woff2"),
-  url("../font/Roboto-Bold.woff") format("woff"),
-  url("../font/Roboto-Bold.ttf") format("truetype"),
-  url("../font/Roboto-Bold.svg#Roboto-Bold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/Gotham-Bold.eot");
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/Gotham-Bold.woff2") format("woff2"), 
+  url("../fonts/Gotham-Bold.woff") format("woff"), 
+  url("../fonts/Gotham-Bold.ttf") format("truetype"), 
+  url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+ }
+@font-face {
+  font-family: "Gotham-Black";
+  src: url("../fonts/Gotham-Black.eot");
+  src: url("../fonts/Gotham-Black.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/Gotham-Black.woff2") format("woff2"), 
+  url("../fonts/Gotham-Black.woff") format("woff"), 
+  url("../fonts/Gotham-Black.ttf") format("truetype"), 
+  url("../fonts/Gotham-Black.svg#Gotham-Black") format("svg");
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+ }
 
-@font-face {font-family: "Roboto-Light";
-  src: url("../font/Roboto-Light.eot");
-  src: url("../font/Roboto-Light.eot?#iefix") format("embedded-opentype"),
-  url("../font/Roboto-Light.woff2") format("woff2"),
-  url("../font/Roboto-Light.woff") format("woff"),
-  url("../font/Roboto-Light.ttf") format("truetype"),
-  url("../font/Roboto-Light.svg#Roboto-Light") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {font-family: "Roboto-Regular";
-  src: url("../font/Roboto-Regular.eot");
-  src: url("../font/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
-  url("../font/Roboto-Regular.woff2") format("woff2"),
-  url("../font/Roboto-Regular.woff") format("woff"),
-  url("../font/Roboto-Regular.ttf") format("truetype"),
-  url("../font/Roboto-Regular.svg#Roboto-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {font-family: "Roboto-Medium";
-  src: url("../font/Roboto-Medium.eot");
-  src: url("../font/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
-  url("../font/Roboto-Medium.woff2") format("woff2"),
-  url("../font/Roboto-Medium.woff") format("woff"),
-  url("../font/Roboto-Medium.ttf") format("truetype"),
-  url("../font/Roboto-Medium.svg#Roboto-Medium") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+  @font-face {
+    font-family: "Gotham-Medium";
+    src: url("../fonts/Gotham-Medium.eot");
+    src: url("../fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Gotham-Medium.woff2") format("woff2"), 
+    url("../fonts/Gotham-Medium.woff") format("woff"), 
+    url("../fonts/Gotham-Medium.ttf") format("truetype"), 
+    url("../fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 
-.Roboto-Regular{
-  font-family: "Roboto-Regular";
+    @font-face {
+      font-family: "Gotham";
+      src: url("../fonts/Gotham.eot");
+      src: url("../fonts/Gotham.eot?#iefix") format("embedded-opentype"), 
+      url("../fonts/Gotham.woff2") format("woff2"), 
+      url("../fonts/Gotham.woff") format("woff"), 
+      url("../fonts/Gotham.ttf") format("truetype"), 
+      url("../fonts/Gotham.svg#Gotham") format("svg");
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+
+    @font-face {
+      font-family: "Bitter";
+      src: url("../fonts/Bitter.eot");
+      src: url("../fonts/Bitter.eot?#iefix") format("embedded-opentype"), 
+      url("../fonts/Bitter.woff2") format("woff2"), 
+      url("../fonts/Bitter.woff") format("woff"), 
+      url("../fonts/Bitter.ttf") format("truetype"), 
+      url("../fonts/Bitter.svg#Bitter") format("svg");
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+
+.Gotham-Bold{
+        font-family: "Gotham-Bold";
+      }
+.Gotham-Black{
+        font-family: "Gotham-Black";
+      }
+.Gotham-Medium{
+      font-family: "Gotham-Medium";
+      }
+.Gotham{
+  font-family: "Gotham";
 }
-.Roboto-Light{
-  font-family: "Roboto-Light";
+.Bitter{
+  font-family: "Bitter";
 }
-.Roboto-Bold{
-  font-family: "Roboto-Bold";
-}
-.Roboto-Medium{
-  font-family: "Roboto-Medium";
-}
+
+/*==============common css=================*/
 
 .grid-container{
-  max-width: 80rem;
+  max-width: 87%;
 }
 
+body{
+  background: #F0F0F0;
+}
+.panel {
+  background: #fff;
+  -webkit-box-shadow: 0 3px 8px 0px #85888a;
+  box-shadow: 0 3px 8px 0px #85888a;
+  a{
+    font-family: "Gotham-Bold";
+    line-height: normal;
+    font-size: 23px;
+    margin-bottom: 1.25rem;
+    color: #000;
+    display: block;
+    clear: both;
+    padding: 40px 90px 20px 40px;
+    position: relative;
+    &::after{
+      height: 45px;
+      position: absolute;
+      background: url(../img/arrow.png);
+      background-repeat: no-repeat;
+      content: "";
+      width: 93px;
+      top: 35%;
+      bottom: 50%;
+      right: 0px;
+      background-position: 20% 0%;
+    }
+    &:hover{
+      &::after{
+        background-repeat: no-repeat;
+        background-position: 20% 98%;
+      }
+    }
+}
+    
+  p{
+    color: #000000;
+    font-family: "Bitter";
+    line-height: 1;
+    font-size: 33px;
+  }
+  img{
+    display: block;
+    clear: both;
+  }
+ }
+
+ .subheader{
+  font-family: "Gotham-Bold";
+  font-size: 24.5px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 1.5rem 0rem;
+ }
 /*==============header=================*/
 header{
-  height: 102px;
-  padding: 15px 0px;
+background: #fff;
+height: 74px;
+  .logo{
+    display: table-cell;
+    vertical-align: middle;
+    height: 74px;
+    text-align: center;
+  }
   .search_icon{
     position: relative;
-    padding: 0px;
-    background: url(../img/linesearch.png);
-    height: 33px;
-    background-repeat: no-repeat;
-    width: 52px;
     margin-top: 20px;
+    display: block;
+    height: 74px;
+    &::after{
+      content: "|";
+      position: absolute;
+      left: 0px;
+      font-size: 25px;
+    }
     &::before{
       content: "\f002";
       font-family: FontAwesome;
@@ -93,15 +186,102 @@ header{
   }
 
   nav{
-    padding: 20px 0px 0px 0px;
+   // padding: 20px 0px 0px 0px;
 a{
   color: #000;
   text-transform: uppercase;
-  font-size: 17px;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-family: "Roboto-Medium";
+  font-size: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: "Gotham-Medium";
+  text-align: center;
+  line-height: 74px;
+  display: inline-block;
+  &:hover,&.active{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+&::before{
+  position: absolute;
+  background: #981C1E;
+  content: "";
+  left: -6px;
+  right: -6px;
+  padding: 20px;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
 }
+  }
+
+}
+  }
+}
+
+/*==============banner=================*/
+
+.banner{
+  .overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 1rem;
+    //background-color: rgba(10,10,10,40%);
+    background-image: url(../img/overlay.png);
+    color: #fefefe;
+    height: 100%;
+  }
+  figure{
+    figcaption{
+    color: #fff;
+    bottom: 20px;
+    left: 5.5rem;
+    background-color: rgba(10,10,10,0);
+h1{
+  font-family: "Gotham-Bold";
+  font-size: 28px;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0px 0px 20px 0px;
+}
+      
+      a{
+        font-family: "Gotham-Bold";
+        font-size: 14px;
+        clear: both;
+        text-transform: uppercase;
+        background: #981C1E;
+        padding: 0px;
+        width: 132px;
+        height: 33px;
+        margin: 0px;
+        line-height: 33px;
+      }
+    }
+  }
+
+  nav.orbit-bullets{
+    position: absolute;
+    right: 4rem;
+    bottom: 0px;
+    top: 30%;
+    height: 100%;
+    margin: 0 auto;
+    button{
+    background-color: #fff;   
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 20px 0px 0px 0px;
+    &.is-active{
+      background-color: #981C1E; 
+    }
+    }
   }
 }
 
@@ -112,13 +292,13 @@ footer.top{
   a{
 color: #000;
 font-size: 14px;
-font-family: "Roboto-Medium";
+font-family: "Gotham-Medium";
 text-transform: uppercase;
   }
   p{
     color: #000;
     font-size: 14px;
-    font-family: "Roboto-Medium";
+    font-family: "Gotham-Medium";
     text-align: center;
     padding: 30px 0px 0px 0px;
       }
@@ -144,7 +324,7 @@ footer.bottom{
 a{
   color: #fff;
   font-size: 14px;
-  font-family: "Roboto-Medium";
+  font-family: "Gotham-Medium";
   text-transform: uppercase;
   display: inline;
   padding: 0px 10px 0px 10px;
@@ -164,11 +344,43 @@ p{
   clear: both;
   line-height: normal;
   color: #fff;
-  font-family: "Roboto-Medium";
+  font-family: "Gotham-Medium";
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
   margin: 20px 0px 0px 0px;
 }
+}
+
+/*==============stock=================*/
+
+.stock-wrapper{
+.grid-container-full{
+  .cell{
+    h1{
+      font-family: "Gotham-Medium";
+      font-size: 23px;
+      clear: both;
+      height: 78px;
+      color: #fff;
+      line-height: 78px;
+      padding-left: 6.4rem;
+      margin: 0px
+    }
+    &:first-child{
+      h1{
+        background: #981C1E;
+        text-transform: capitalize;
+      }
+    }
+    &:last-child{
+      h1{
+        background: #DC8A03;
+        text-transform: uppercase;
+       
+      }
+    }
+  }
+  }
 }
