@@ -23,7 +23,7 @@ $(document).ready(function(){
   });
 
   $(document).ready(function(){
-    $('.owl-carousel.carousel-people').owlCarousel(
+    $('.owl-carousel.carousel-people,.owl-carousel.owl-inner-carousel').owlCarousel(
         {
             loop:true,
             margin:40,
@@ -43,6 +43,31 @@ $(document).ready(function(){
             }
         }
     );
+
+
+    $('.owl-carousel.carousel-people-inner').owlCarousel(
+        {
+            loop:true,
+            margin:40,
+            nav:true,
+            dots:true,
+            autoplay: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        }
+    );
+
+
+
   });
 
 
@@ -85,3 +110,24 @@ $(document).ready(function(){
                 $('.jarallax').css('width', $(window).width() + 'px');
                 });
     });
+
+
+
+    
+
+
+            (function($) {
+    
+               var allPanels = $('.accordioncontent').hide();
+                  
+                $('.accordionheader,.closebutton').click(function() {
+
+                   // $('.accordionheader.active').removeClass('active');
+                   // $(this).addClass('active')
+
+                  allPanels.slideUp();
+                  $(this).parent().next().slideDown();
+                  return false;
+                });
+              
+              })(jQuery);
