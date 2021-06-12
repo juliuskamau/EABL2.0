@@ -48,6 +48,13 @@
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale; }
+@font-face {
+  font-family: "Bitter-Italic";
+  src: url("../fonts/Bitter-Italic.eot");
+  src: url("../fonts/Bitter-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Bitter-Italic.woff2") format("woff2"), url("../fonts/Bitter-Italic.woff") format("woff"), url("../fonts/Bitter-Italic.ttf") format("truetype"), url("../fonts/Bitter-Italic.svg#Bitter-Italic") format("svg");
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
 .Gotham-Bold {
   font-family: "Gotham-Bold"; }
 
@@ -72,8 +79,7 @@ p {
   padding: 20px 73px; }
 
 .quote {
-  font-family: "Bitter";
-  font-style: italic;
+  font-family: "Bitter-Italic";
   display: block;
   clear: both;
   padding: 1.9rem 1rem 0rem 0rem; }
@@ -84,7 +90,8 @@ p {
 
 /*==============common css=================*/
 .grid-container {
-  max-width: 87%; }
+  max-width: 87%;
+  padding: 0px; }
 
 body {
   background: #F0F0F0; }
@@ -429,7 +436,7 @@ footer.bottom {
   .carousel-people .jarallax, .carousel-people-inner .jarallax {
     min-height: 448px; }
   .carousel-people .panel .bodytextwrapper, .carousel-people-inner .panel .bodytextwrapper {
-    padding: 3rem; }
+    padding: 3rem 3rem 3rem 4rem; }
   .carousel-people .panel .subheader, .carousel-people-inner .panel .subheader {
     text-align: right;
     font-family: "Gotham-Black";
@@ -594,9 +601,9 @@ footer.bottom {
   z-index: 0; }
   .jarallax .jarallax-img {
     position: absolute;
-    object-fit: cover;
+    object-fit: fill !important;
     /* support for plugin https://github.com/bfred-it/object-fit-images */
-    font-family: 'object-fit: cover;';
+    font-family: 'object-fit: fill !important;';
     top: 0;
     left: 0;
     width: 100%;
@@ -747,6 +754,13 @@ ul.tabs {
   background: #DEDBDB;
   padding: 3.5rem 0px; }
 
+.profile-our-people .owl-carousel {
+  margin: 20px 0px 0px 0px; }
+  .profile-our-people .owl-carousel .owl-dots {
+    display: none; }
+  .profile-our-people .owl-carousel .jarallax-img {
+    object-fit: fill !important;
+    font-family: 'object-fit: fill !important;'; }
 .profile-our-people .jarallax {
   min-height: 464px; }
 
@@ -765,5 +779,45 @@ ul.tabs {
   padding: 40px 0px 40px 30px; }
 .inline-buttons .cell:first-child .full-button-width {
   background-color: #DD8A03; }
+
+.news-page-main .more-news .jarallax {
+  min-height: 279px; }
+  .news-page-main .more-news .jarallax .jarallax-img {
+    object-fit: contain !important;
+    font-family: 'object-fit: contain !important;'; }
+.news-page-main .more-news .panel {
+  margin: 0rem;
+  padding: 0px;
+  background: #Fff;
+  display: initial;
+  clear: initial; }
+  .news-page-main .more-news .panel a {
+    font-size: 18.16px;
+    padding: 20px 60px 20px 20px;
+    background-color: #fff;
+    min-height: 128px;
+    max-height: 128px; }
+    .news-page-main .more-news .panel a::after {
+      background-size: 40px 95px; }
+.news-page-main .profile-title {
+  font-size: 30.31px;
+  text-transform: uppercase;
+  padding: 1rem 0; }
+.news-page-main .large-3 p {
+  font-size: 20.79px;
+  font-family: 'Gotham-Book';
+  margin-bottom: 0px;
+  line-height: 1.3; }
+.news-page-main .large-3 ul.quicklinks {
+  margin: 0px 0px 0px 20px;
+  padding: 0px; }
+  .news-page-main .large-3 ul.quicklinks li a {
+    font-size: 18.16px;
+    font-family: 'Gotham-Bold';
+    color: #000; }
+.news-page-main .subheader {
+  font-family: 'Gotham-Bold';
+  font-size: 21.79px;
+  padding: 1rem 0; }
 
 /*# sourceMappingURL=app.css.map */
