@@ -94,12 +94,33 @@ $(document).ready(function(){
     );
   });
 
-
+  $(document).ready(function(){
+    $('.owl-carousel.boardthumb').owlCarousel(
+        {
+            loop:true,
+            margin:0,
+            nav:true,
+            dots:false,
+            autoplay: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        }
+    );
+  });
 
 
      jQuery(document).ready(function($) {
         $('.jarallax').jarallax({
-            speed: 0.5,
+          //  speed: 0.5,
         });  
         $(window).resize(function() {
                 $('.jarallax').jarallax('onResize');
@@ -122,7 +143,7 @@ $(document).ready(function(){
                   
                 $('.accordionheader,.closebutton').click(function() {
 
-                   // $('.accordionheader.active').removeClass('active');
+                  //  $('.accordionheader.active').removeClass('active');
                    // $(this).addClass('active')
 
                   allPanels.slideUp();

@@ -525,7 +525,7 @@ footer.bottom {
         font-size: 15px; }
       .breadcrumbs-3 ul li a {
         color: #000;
-        font-family: 'Gotham-Medium';
+        font-family: "Gotham-Medium";
         font-size: 14.52px; }
 
 .breadcrumbs-1 {
@@ -546,18 +546,18 @@ footer.bottom {
         font-size: 15px; }
       .breadcrumbs-1 .center ul li a {
         color: #fff;
-        font-family: 'Gotham-Medium';
+        font-family: "Gotham-Medium";
         font-size: 14.52px; }
 
 .breadcrumbs-2 {
   margin: 20px 0px; }
   .breadcrumbs-2 li {
     color: #DC8A03;
-    font-family: 'Gotham-Medium';
+    font-family: "Gotham-Medium";
     font-size: 10.89px; }
     .breadcrumbs-2 li a {
       color: #000;
-      font-family: 'Gotham-Medium';
+      font-family: "Gotham-Medium";
       font-size: 10.89px; }
     .breadcrumbs-2 li:not(:last-child)::after {
       color: #000; }
@@ -565,20 +565,26 @@ footer.bottom {
 /*==============jarallax css=================*/
 .bodytext-wrapper-inner .bodytext {
   padding: 0px 10rem; }
-  .bodytext-wrapper-inner .bodytext h1, .bodytext-wrapper-inner .bodytext h2, .bodytext-wrapper-inner .bodytext p {
+  .bodytext-wrapper-inner .bodytext h1, .bodytext-wrapper-inner .bodytext h2, .bodytext-wrapper-inner .bodytext p, .bodytext-wrapper-inner .bodytext span {
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    display: block;
+    clear: both; }
   .bodytext-wrapper-inner .bodytext h1 {
     font-size: 36.3px;
-    font-family: 'Gotham-Black';
+    font-family: "Gotham-Black";
     padding: 0px; }
   .bodytext-wrapper-inner .bodytext h2 {
     font-size: 21.78px;
-    font-family: 'Gotham-Book';
+    font-family: "Gotham-Book";
     text-transform: uppercase; }
   .bodytext-wrapper-inner .bodytext p {
     font-size: 21.78px;
-    font-family: 'Better'; }
+    font-family: "Bitter"; }
+  .bodytext-wrapper-inner .bodytext span {
+    font-size: 14.52px;
+    font-family: "Gotham-Medium";
+    text-transform: uppercase; }
 
 .brands-main-image {
   height: 365px;
@@ -609,6 +615,30 @@ footer.bottom {
     width: 100%;
     height: 100%;
     z-index: -1; }
+
+/*==============media-gallery css=================*/
+.media-gallery img {
+  object-fit: cover !important;
+  font-family: 'object-fit: cover !important;'; }
+.media-gallery .media-image-holder {
+  padding: 0rem 0rem 0rem 4rem; }
+  .media-gallery .media-image-holder img {
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; }
+.media-gallery p {
+  font-size: 20.33px;
+  font-family: "Gotham-Bold";
+  margin: 1rem 0rem; }
+.media-gallery .subheader {
+  position: relative; }
+  .media-gallery .subheader:after {
+    position: absolute;
+    left: 7%;
+    width: 93%;
+    border-top: solid #999999 1px;
+    content: "";
+    top: 50%;
+    bottom: 50%; }
 
 /*==============tabs css=================*/
 .tabs-title > a[aria-selected=true] {
@@ -648,7 +678,7 @@ ul.tabs {
   display: initial; }
 
 .accordioncontent {
-  background: url(../img/accordionactivetexture.png) transparent;
+  background-image: url(../img/accordionactivetexture.png);
   width: 100vw;
   margin-left: -8vw;
   padding: 2rem 0rem;
@@ -682,7 +712,7 @@ ul.tabs {
     padding: 0px; }
   .accordioncontent h1 {
     font-size: 56.62px;
-    font-family: 'Gotham-Black';
+    font-family: "Gotham-Black";
     line-height: normal;
     padding: 0px; }
   .accordioncontent h1, .accordioncontent h2, .accordioncontent p, .accordioncontent a {
@@ -780,44 +810,132 @@ ul.tabs {
 .inline-buttons .cell:first-child .full-button-width {
   background-color: #DD8A03; }
 
-.news-page-main .more-news .jarallax {
+.news-page-main .button, .news-page-main .panel.panel-yellow, .news-page-main .panel.panel-brown, .investor-page-main .button, .investor-page-main .panel.panel-yellow, .investor-page-main .panel.panel-brown {
+  margin: 0rem 0rem 2rem 0rem; }
+.news-page-main .more-news .jarallax, .investor-page-main .more-news .jarallax {
   min-height: 279px; }
-  .news-page-main .more-news .jarallax .jarallax-img {
+  .news-page-main .more-news .jarallax .jarallax-img, .investor-page-main .more-news .jarallax .jarallax-img {
     object-fit: contain !important;
     font-family: 'object-fit: contain !important;'; }
-.news-page-main .more-news .panel {
+.news-page-main .more-news .panel, .investor-page-main .more-news .panel {
   margin: 0rem;
   padding: 0px;
   background: #Fff;
   display: initial;
   clear: initial; }
-  .news-page-main .more-news .panel a {
+  .news-page-main .more-news .panel a, .investor-page-main .more-news .panel a {
     font-size: 18.16px;
     padding: 20px 60px 20px 20px;
-    background-color: #fff;
-    min-height: 128px;
-    max-height: 128px; }
-    .news-page-main .more-news .panel a::after {
+    background-color: #fff; }
+    .news-page-main .more-news .panel a::after, .investor-page-main .more-news .panel a::after {
       background-size: 40px 95px; }
-.news-page-main .profile-title {
+.news-page-main .profile-title, .investor-page-main .profile-title {
   font-size: 30.31px;
   text-transform: uppercase;
   padding: 1rem 0; }
-.news-page-main .large-3 p {
+.news-page-main .large-3 p, .investor-page-main .large-3 p {
   font-size: 20.79px;
-  font-family: 'Gotham-Book';
+  font-family: "Gotham-Book";
   margin-bottom: 0px;
   line-height: 1.3; }
-.news-page-main .large-3 ul.quicklinks {
+.news-page-main .large-3 ul.quicklinks, .investor-page-main .large-3 ul.quicklinks {
   margin: 0px 0px 0px 20px;
   padding: 0px; }
-  .news-page-main .large-3 ul.quicklinks li a {
+  .news-page-main .large-3 ul.quicklinks li a, .investor-page-main .large-3 ul.quicklinks li a {
     font-size: 18.16px;
     font-family: 'Gotham-Bold';
     color: #000; }
-.news-page-main .subheader {
+.news-page-main .subheader, .investor-page-main .subheader {
   font-family: 'Gotham-Bold';
   font-size: 21.79px;
   padding: 1rem 0; }
+
+.investor-page-main .quicklinkswrapper {
+  margin: 2rem 0rem; }
+  .investor-page-main .quicklinkswrapper .subheader {
+    padding: 0rem 0rem 2rem 0rem;
+    line-height: normal; }
+  .investor-page-main .quicklinkswrapper .large-9 .button {
+    margin-bottom: 0px; }
+
+.our-bussiness-container p {
+  font-size: 14.52px; }
+.our-bussiness-container h1 {
+  font-size: 29.04px;
+  font-family: "Gotham-Black";
+  text-transform: uppercase; }
+.our-bussiness-container .our-value-accordion, .our-bussiness-container .our-company-accordion, .our-bussiness-container .our-leadership-accordion {
+  background: #E2E2E2;
+  padding: 2rem 0rem; }
+  .our-bussiness-container .our-value-accordion ul.tabs, .our-bussiness-container .our-company-accordion ul.tabs, .our-bussiness-container .our-leadership-accordion ul.tabs {
+    padding: 0px;
+    margin: 0px;
+    width: 100%; }
+    .our-bussiness-container .our-value-accordion ul.tabs li a, .our-bussiness-container .our-company-accordion ul.tabs li a, .our-bussiness-container .our-leadership-accordion ul.tabs li a {
+      font-size: 12.34px;
+      font-family: "Gotham-Black";
+      border-bottom: solid 2px #DADADA;
+      padding: 0.8rem 0rem;
+      text-transform: uppercase; }
+      .our-bussiness-container .our-value-accordion ul.tabs li a .fa, .our-bussiness-container .our-company-accordion ul.tabs li a .fa, .our-bussiness-container .our-leadership-accordion ul.tabs li a .fa {
+        float: right;
+        font-size: 18px; }
+      .our-bussiness-container .our-value-accordion ul.tabs li a::after, .our-bussiness-container .our-company-accordion ul.tabs li a::after, .our-bussiness-container .our-leadership-accordion ul.tabs li a::after {
+        display: none; }
+.our-bussiness-container .tabs-content {
+  background: #E2E2E2;
+  padding: 1rem 1rem 1rem 4rem;
+  border: none; }
+  .our-bussiness-container .tabs-content h1 {
+    font-size: 34.85px;
+    font-family: "Gotham-Bold"; }
+
+.our-company-accordion {
+  background: #F0F0F0 !important; }
+  .our-company-accordion .tabs-content {
+    background: #F0F0F0;
+    padding: 0rem 1rem 0rem 1rem;
+    border: none; }
+    .our-company-accordion .tabs-content h1 {
+      font-size: 21.06px;
+      font-family: "Gotham-Bold"; }
+
+.boardthumb .item .panel-image .accordionheader {
+  -webkit-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
+  -moz-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
+  box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
+  width: 207px;
+  height: 212px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  border: solid 1px #fff;
+  background-color: #EDE7E7; }
+.boardthumb .item .panel-image .name {
+  font-size: 13.07px;
+  font-family: "Gotham-Bold";
+  text-align: center;
+  margin: 10px 0px 0px 0px; }
+.boardthumb .item .panel-image .position {
+  font-size: 13.07px;
+  font-family: "Gotham-Book";
+  text-align: center; }
+.boardthumb .item .accordioncontent {
+  background-image: none !important;
+  background-color: #fff;
+  margin: 0px;
+  width: 900px;
+  padding: 1rem 2rem; }
+
+.our-leadership-accordion .tabs-content {
+  padding: 0rem; }
+.our-leadership-accordion .tabs-panel {
+  padding: 0rem 0rem 0rem 4rem; }
+.our-leadership-accordion .owl-nav {
+  top: 40%; }
+.our-leadership-accordion .accordioncontent {
+  display: block; }
 
 /*# sourceMappingURL=app.css.map */
