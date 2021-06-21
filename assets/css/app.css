@@ -406,9 +406,9 @@ footer.bottom {
   height: 153px; }
   .thumbnailcarousel .owl-carousel {
     padding: 0px 40px;
-    margin: 20px 0px 0px 0px; }
+    /*margin: 20px 0px 0px 0px;*/ }
     .thumbnailcarousel .owl-carousel .owl-nav {
-      top: 0%; }
+      margin-top: 23px; }
     .thumbnailcarousel .owl-carousel img {
       width: initial; }
 
@@ -469,11 +469,18 @@ footer.bottom {
       display: none; }
 
 .owl-nav {
+  /* position: absolute;
+   top: 50%;
+   bottom: 50%;
+   right: 0px;
+   left: 0px;*/
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  top: 0;
+  bottom: 0;
   right: 0px;
-  left: 0px; }
+  left: 0px;
+  display: block;
+  width: 100%; }
   .owl-nav .owl-prev, .owl-nav .owl-next {
     font-size: 0px;
     background-image: url(../img/arrowcarouselleft.png) !important;
@@ -680,7 +687,7 @@ ul.tabs {
 .accordioncontent {
   background-image: url(../img/accordionactivetexture.png);
   width: 100vw;
-  margin-left: -8vw;
+  margin-left: -7vw;
   padding: 2rem 0rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -860,32 +867,39 @@ ul.tabs {
 
 .our-bussiness-container p {
   font-size: 14.52px; }
+.our-bussiness-container strong {
+  font-family: "Gotham-Bold";
+  font-size: 14.52px;
+  display: block; }
 .our-bussiness-container h1 {
   font-size: 29.04px;
   font-family: "Gotham-Black";
-  text-transform: uppercase; }
-.our-bussiness-container .our-value-accordion, .our-bussiness-container .our-company-accordion, .our-bussiness-container .our-leadership-accordion {
+  text-transform: uppercase;
+  margin: 0rem 0rem 1rem 0rem; }
+.our-bussiness-container .our-value-accordion, .our-bussiness-container .our-company-accordion, .our-bussiness-container .our-leadership-accordion, .our-bussiness-container .our-partners-accordion {
   background: #E2E2E2;
   padding: 2rem 0rem; }
-  .our-bussiness-container .our-value-accordion ul.tabs, .our-bussiness-container .our-company-accordion ul.tabs, .our-bussiness-container .our-leadership-accordion ul.tabs {
+  .our-bussiness-container .our-value-accordion ul.tabs, .our-bussiness-container .our-company-accordion ul.tabs, .our-bussiness-container .our-leadership-accordion ul.tabs, .our-bussiness-container .our-partners-accordion ul.tabs {
     padding: 0px;
     margin: 0px;
     width: 100%; }
-    .our-bussiness-container .our-value-accordion ul.tabs li a, .our-bussiness-container .our-company-accordion ul.tabs li a, .our-bussiness-container .our-leadership-accordion ul.tabs li a {
+    .our-bussiness-container .our-value-accordion ul.tabs li a, .our-bussiness-container .our-company-accordion ul.tabs li a, .our-bussiness-container .our-leadership-accordion ul.tabs li a, .our-bussiness-container .our-partners-accordion ul.tabs li a {
       font-size: 12.34px;
       font-family: "Gotham-Black";
       border-bottom: solid 2px #DADADA;
       padding: 0.8rem 0rem;
       text-transform: uppercase; }
-      .our-bussiness-container .our-value-accordion ul.tabs li a .fa, .our-bussiness-container .our-company-accordion ul.tabs li a .fa, .our-bussiness-container .our-leadership-accordion ul.tabs li a .fa {
+      .our-bussiness-container .our-value-accordion ul.tabs li a .fa, .our-bussiness-container .our-company-accordion ul.tabs li a .fa, .our-bussiness-container .our-leadership-accordion ul.tabs li a .fa, .our-bussiness-container .our-partners-accordion ul.tabs li a .fa {
         float: right;
         font-size: 18px; }
-      .our-bussiness-container .our-value-accordion ul.tabs li a::after, .our-bussiness-container .our-company-accordion ul.tabs li a::after, .our-bussiness-container .our-leadership-accordion ul.tabs li a::after {
+      .our-bussiness-container .our-value-accordion ul.tabs li a::after, .our-bussiness-container .our-company-accordion ul.tabs li a::after, .our-bussiness-container .our-leadership-accordion ul.tabs li a::after, .our-bussiness-container .our-partners-accordion ul.tabs li a::after {
         display: none; }
 .our-bussiness-container .tabs-content {
   background: #E2E2E2;
-  padding: 1rem 1rem 1rem 4rem;
+  padding: 1rem 1rem 1rem 3.5rem;
   border: none; }
+  .our-bussiness-container .tabs-content .tabs-panel {
+    padding: 0rem; }
   .our-bussiness-container .tabs-content h1 {
     font-size: 34.85px;
     font-family: "Gotham-Bold"; }
@@ -894,40 +908,98 @@ ul.tabs {
   background: #F0F0F0 !important; }
   .our-company-accordion .tabs-content {
     background: #F0F0F0;
-    padding: 0rem 1rem 0rem 1rem;
     border: none; }
     .our-company-accordion .tabs-content h1 {
       font-size: 21.06px;
       font-family: "Gotham-Bold"; }
 
-.boardthumb .item .panel-image .accordionheader {
-  -webkit-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
-  -moz-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
-  box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
-  width: 207px;
-  height: 212px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  border: solid 1px #fff;
-  background-color: #EDE7E7; }
-.boardthumb .item .panel-image .name {
-  font-size: 13.07px;
-  font-family: "Gotham-Bold";
-  text-align: center;
-  margin: 10px 0px 0px 0px; }
-.boardthumb .item .panel-image .position {
-  font-size: 13.07px;
-  font-family: "Gotham-Book";
-  text-align: center; }
-.boardthumb .item .accordioncontent {
-  background-image: none !important;
-  background-color: #fff;
+.our-partners-accordion {
+  background: #E2E2E2; }
+
+.boardthumb {
+  border: none;
+  background: none; }
+  .boardthumb .owl-item .tabs-title {
+    float: none; }
+    .boardthumb .owl-item .tabs-title a:hover, .boardthumb .owl-item .tabs-title a:focus {
+      overflow: hidden;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      border: none;
+      background-color: transparent; }
+    .boardthumb .owl-item .tabs-title a img {
+      -webkit-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
+      -moz-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
+      box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
+      width: 207px;
+      height: 212px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      border: solid 1px #fff;
+      background-color: #EDE7E7; }
+    .boardthumb .owl-item .tabs-title .name {
+      font-size: 13.07px;
+      font-family: "Gotham-Bold";
+      text-align: center;
+      margin: 0px;
+      text-transform: capitalize; }
+    .boardthumb .owl-item .tabs-title .position {
+      font-size: 13.07px;
+      font-family: "Gotham-Book";
+      text-align: center;
+      margin: 5px 0px 0px 0px;
+      text-transform: capitalize; }
+  .boardthumb .owl-item .tabs-title.is-active img {
+    -webkit-box-shadow: 0px 10px 30px rgba(152, 28, 30, 0.3);
+    -moz-box-shadow: 0px 10px 30px rgba(152, 28, 30, 0.3);
+    box-shadow: 0px 10px 30px rgba(152, 28, 30, 0.3); }
+
+[data-tabs-content|="leadership"].tabs-content {
+  padding: 0rem 3rem !important; }
+  [data-tabs-content|="leadership"].tabs-content .tabs-title a {
+    padding: 0rem 0rem 1.5rem 0rem;
+    display: block; }
+    [data-tabs-content|="leadership"].tabs-content .tabs-title a:hover, [data-tabs-content|="leadership"].tabs-content .tabs-title a:focus {
+      display: block;
+      padding: 0rem 0rem 1.5rem 0rem; }
+
+[data-tabs-content|="leadership-carousel"] {
+  background: #F0F0F0;
   margin: 0px;
-  width: 900px;
-  padding: 1rem 2rem; }
+  width: 100%; }
+  [data-tabs-content|="leadership-carousel"] .tabs-panel.is-active {
+    background: #fff;
+    margin: 0px;
+    width: 100%;
+    padding: 2rem 9rem;
+    -webkit-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.1);
+    -moz-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.1);
+    box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.1);
+    position: relative; }
+    [data-tabs-content|="leadership-carousel"] .tabs-panel.is-active::before {
+      border: solid transparent;
+      border-bottom-color: #fff;
+      border-width: 30px;
+      top: 0px;
+      content: ' ';
+      left: 28rem;
+      position: absolute;
+      margin-top: -3.7rem; }
+    [data-tabs-content|="leadership-carousel"] .tabs-panel.is-active:nth-child(2)::before {
+      left: 48rem; }
+    [data-tabs-content|="leadership-carousel"] .tabs-panel.is-active:nth-child(3)::before, [data-tabs-content|="leadership-carousel"] .tabs-panel.is-active:nth-child(4)::before {
+      left: 68rem; }
+    [data-tabs-content|="leadership-carousel"] .tabs-panel.is-active a {
+      display: block;
+      text-align: center;
+      margin: 0 auto; }
+      [data-tabs-content|="leadership-carousel"] .tabs-panel.is-active a .fa-linkedin-square {
+        color: #2867B2;
+        font-size: 40px; }
 
 .our-leadership-accordion .tabs-content {
   padding: 0rem; }
@@ -935,7 +1007,48 @@ ul.tabs {
   padding: 0rem 0rem 0rem 4rem; }
 .our-leadership-accordion .owl-nav {
   top: 40%; }
+  .our-leadership-accordion .owl-nav .owl-prev, .our-leadership-accordion .owl-nav .owl-next {
+    opacity: 0.3; }
 .our-leadership-accordion .accordioncontent {
   display: block; }
+
+#sustainability .accordion-item a.accordion-title, #sustainability .accordion-item a.tabs-title, #sustainability .tabs-item a.accordion-title, #sustainability .tabs-item a.tabs-title {
+  background: #F0F0F0;
+  border: none;
+  border-bottom: #A9A9A9 solid 2px;
+  /*padding: 1.25rem 2rem 3rem 2rem;
+  margin: 0rem 4rem;*/
+  padding: 1.25rem 2.5rem 2.5rem 2.5rem;
+  margin: 0rem 7rem; }
+  #sustainability .accordion-item a.accordion-title h1, #sustainability .accordion-item a.tabs-title h1, #sustainability .tabs-item a.accordion-title h1, #sustainability .tabs-item a.tabs-title h1 {
+    font-family: "Gotham-Bold";
+    font-size: 32.67px;
+    color: #000; }
+  #sustainability .accordion-item a.accordion-title p, #sustainability .accordion-item a.tabs-title p, #sustainability .tabs-item a.accordion-title p, #sustainability .tabs-item a.tabs-title p {
+    font-size: 21.78px;
+    font-family: "Bitter-Italic";
+    color: #000;
+    width: 80%;
+    margin: 0px; }
+  #sustainability .accordion-item a.accordion-title::before, #sustainability .accordion-item a.tabs-title::before, #sustainability .tabs-item a.accordion-title::before, #sustainability .tabs-item a.tabs-title::before {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    margin-top: -.5rem;
+    content: '+';
+    background: #981C1E;
+    padding: .2rem 0.8rem;
+    color: #fff;
+    font-size: 2rem; }
+#sustainability .accordion-item.is-active a.accordion-title,
+#sustainability .tabs-item.is-active a.tabs-title {
+  border-bottom: none; }
+
+.wrapper-sus {
+  background: #fff; }
+  .wrapper-sus .accordion, .wrapper-sus .tabs {
+    background: #F0F0F0; }
+  .wrapper-sus .accordion-content, .wrapper-sus .tabs-content {
+    padding: 2rem 9.5rem; }
 
 /*# sourceMappingURL=app.css.map */

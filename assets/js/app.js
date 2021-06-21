@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.thumbnailcarousel .owl-carousel').owlCarousel(
         {
             loop:true,
-            margin:40,
+            margin:0,
             nav:true,
             dots:false,
             autoplay: true,
@@ -107,7 +107,7 @@ $(document).ready(function(){
                     items:1
                 },
                 600:{
-                    items:2
+                    items:3
                 },
                 1000:{
                     items:3
@@ -117,6 +117,28 @@ $(document).ready(function(){
     );
   });
 
+  $(document).ready(function(){
+    $('.owl-carousel.boardthumb-bio').owlCarousel(
+        {
+            loop:true,
+            margin:0,
+            nav:false,
+            dots:false,
+            autoplay: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:1
+                }
+            }
+        }
+    );
+  });
 
      jQuery(document).ready(function($) {
         $('.jarallax').jarallax({
