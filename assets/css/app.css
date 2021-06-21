@@ -555,11 +555,14 @@ footer.bottom {
         color: #fff;
         font-family: "Gotham-Medium";
         font-size: 14.52px; }
+        .breadcrumbs-1 .center ul li a.active {
+          color: #FFC90F; }
 
 .breadcrumbs-2 {
-  margin: 20px 0px; }
+  /*margin: 20px 0px;*/
+  margin: 1.5rem 0rem 0rem 0rem; }
   .breadcrumbs-2 li {
-    color: #DC8A03;
+    color: #981C1E;
     font-family: "Gotham-Medium";
     font-size: 10.89px; }
     .breadcrumbs-2 li a {
@@ -573,8 +576,12 @@ footer.bottom {
 .bodytext-wrapper-inner .bodytext {
   padding: 0px 10rem; }
   .bodytext-wrapper-inner .bodytext h1, .bodytext-wrapper-inner .bodytext h2, .bodytext-wrapper-inner .bodytext p, .bodytext-wrapper-inner .bodytext span {
+    /* text-align: center;
+     margin-bottom: 20px;
+     display: block;
+     clear: both;*/
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: block;
     clear: both; }
   .bodytext-wrapper-inner .bodytext h1 {
@@ -592,6 +599,8 @@ footer.bottom {
     font-size: 14.52px;
     font-family: "Gotham-Medium";
     text-transform: uppercase; }
+    .bodytext-wrapper-inner .bodytext span img {
+      margin-top: -5px; }
 
 .brands-main-image {
   height: 365px;
@@ -614,9 +623,8 @@ footer.bottom {
   z-index: 0; }
   .jarallax .jarallax-img {
     position: absolute;
-    object-fit: fill !important;
-    /* support for plugin https://github.com/bfred-it/object-fit-images */
-    font-family: 'object-fit: fill !important;';
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
     top: 0;
     left: 0;
     width: 100%;
@@ -624,21 +632,21 @@ footer.bottom {
     z-index: -1; }
 
 /*==============media-gallery css=================*/
-.media-gallery img {
+.media-gallery img, .report img {
   object-fit: cover !important;
   font-family: 'object-fit: cover !important;'; }
-.media-gallery .media-image-holder {
+.media-gallery .media-image-holder, .report .media-image-holder {
   padding: 0rem 0rem 0rem 4rem; }
-  .media-gallery .media-image-holder img {
+  .media-gallery .media-image-holder img, .report .media-image-holder img {
     object-fit: cover;
     font-family: 'object-fit: cover;'; }
-.media-gallery p {
+.media-gallery p, .report p {
   font-size: 20.33px;
   font-family: "Gotham-Bold";
   margin: 1rem 0rem; }
-.media-gallery .subheader {
+.media-gallery .subheader, .report .subheader {
   position: relative; }
-  .media-gallery .subheader:after {
+  .media-gallery .subheader:after, .report .subheader:after {
     position: absolute;
     left: 7%;
     width: 93%;
@@ -646,6 +654,30 @@ footer.bottom {
     content: "";
     top: 50%;
     bottom: 50%; }
+
+.report .subheader {
+  margin: 0 auto; }
+.report a {
+  border-bottom: #A9A9A9 solid 2px;
+  padding: 1.25rem 0rem 1.5rem 0rem; }
+  .report a:last-child {
+    border-bottom: none; }
+  .report a h2 {
+    font-size: 18px;
+    font-family: "Gotham-Bold";
+    color: #981C1E;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0; }
+  .report a h3 {
+    font-size: 18px;
+    font-family: "Gotham-Bold";
+    color: #000;
+    text-transform: capitalize;
+    padding: 0px;
+    margin: 0px; }
+.report .panel-wrapper {
+  background: #E6E6E6; }
 
 /*==============tabs css=================*/
 .tabs-title > a[aria-selected=true] {
@@ -1050,5 +1082,134 @@ ul.tabs {
     background: #F0F0F0; }
   .wrapper-sus .accordion-content, .wrapper-sus .tabs-content {
     padding: 2rem 9.5rem; }
+
+/*==============heritage page css=================*/
+.heritage-container {
+  padding: 7rem; }
+  .heritage-container .jarallax {
+    min-height: 300px; }
+    .heritage-container .jarallax .jarallax-img {
+      padding-right: 0.8rem; }
+  .heritage-container span.down {
+    font-family: "Gotham-Medium";
+    color: #6C6C6C;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px; }
+    .heritage-container span.down img {
+      width: inherit;
+      height: auto; }
+  .heritage-container h1 {
+    font-size: 58.81px;
+    font-family: "Gotham-Black";
+    position: relative;
+    border-bottom: solid #FFC90F 2px;
+    display: block;
+    padding: 1rem 0rem 1rem 0.8rem;
+    margin: 0rem 0rem 1rem 0rem;
+    width: 230px; }
+    .heritage-container h1::after {
+      position: absolute;
+      left: -31px;
+      width: 35px;
+      height: 37px;
+      content: "";
+      bottom: -15px;
+      background: #FFC90F;
+      border-radius: 50%; }
+  .heritage-container .strip-line {
+    position: relative; }
+    .heritage-container .strip-line::before {
+      position: absolute;
+      left: -15px;
+      width: 2px;
+      height: 400px;
+      content: "";
+      bottom: 0;
+      background: #000;
+      top: 0;
+      z-index: -1; }
+    .heritage-container .strip-line .accordioncontent {
+      margin-left: -51vw;
+      background-image: none;
+      background-color: #fff;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      padding: 3rem 0rem; }
+      .heritage-container .strip-line .accordioncontent .grid-x {
+        margin: 0 auto; }
+      .heritage-container .strip-line .accordioncontent h2 {
+        font-size: 25.41px;
+        font-family: "Gotham-Bold";
+        margin: 0px;
+        position: relative;
+        padding-right: 2rem; }
+        .heritage-container .strip-line .accordioncontent h2::after {
+          position: absolute;
+          right: 50%;
+          left: 50%;
+          border-top: solid #999999 2px;
+          content: "";
+          top: 50%;
+          bottom: 50%;
+          width: 70px;
+          margin-top: -6px;
+          margin-left: 1rem; }
+      .heritage-container .strip-line .accordioncontent .strip {
+        font-size: 58.81px;
+        font-family: "Gotham-Black";
+        position: relative;
+        border-left: solid #FFC90F 2px;
+        padding-left: 2rem;
+        height: 100%; }
+        .heritage-container .strip-line .accordioncontent .strip::after {
+          position: absolute;
+          left: 0;
+          right: 0;
+          width: 25px;
+          height: 25px;
+          content: "";
+          top: 0;
+          background: #FFC90F;
+          border-radius: 50%;
+          margin-left: -14px;
+          margin-top: 0px; }
+      .heritage-container .strip-line .accordioncontent p, .heritage-container .strip-line .accordioncontent ul li {
+        font-size: 14.52px;
+        font-family: "Bitter"; }
+      .heritage-container .strip-line .accordioncontent ul {
+        margin-left: 2rem; }
+        .heritage-container .strip-line .accordioncontent ul li {
+          margin-bottom: 1rem; }
+    .heritage-container .strip-line .accordionheader {
+      position: relative;
+      font-size: 10.7px;
+      font-family: "Bitter";
+      color: #000;
+      width: 160px;
+      text-align: right;
+      display: block;
+      line-height: 45px;
+      text-transform: uppercase; }
+      .heritage-container .strip-line .accordionheader::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 11px;
+        content: '+';
+        background: #981C1E;
+        color: #fff;
+        font-size: 2rem;
+        display: table;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        line-height: 45px; }
+  .heritage-container p {
+    font-size: 16.7px;
+    font-family: "Bitter";
+    padding-left: 0.8rem; }
 
 /*# sourceMappingURL=app.css.map */

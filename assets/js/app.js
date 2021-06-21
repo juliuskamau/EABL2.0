@@ -140,6 +140,7 @@ $(document).ready(function(){
     );
   });
 
+
      jQuery(document).ready(function($) {
         $('.jarallax').jarallax({
           //  speed: 0.5,
@@ -165,8 +166,8 @@ $(document).ready(function(){
                   
                 $('.accordionheader,.closebutton').click(function() {
 
-                  //  $('.accordionheader.active').removeClass('active');
-                   // $(this).addClass('active')
+                    $('.accordionheader.active').removeClass('active');
+                    $(this).addClass('active')
 
                   allPanels.slideUp();
                   $(this).parent().next().slideDown();

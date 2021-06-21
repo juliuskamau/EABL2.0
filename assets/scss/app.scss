@@ -774,6 +774,10 @@ padding: 3rem 3rem 3rem 4rem;
           color: #fff;
           font-family:"Gotham-Medium";
           font-size: 14.52px;
+          &.active{
+        
+            color:#FFC90F;
+          }
         }
       }
     }
@@ -782,15 +786,17 @@ padding: 3rem 3rem 3rem 4rem;
 }
 
 .breadcrumbs-2{
-  margin: 20px 0px;
+  /*margin: 20px 0px;*/
+  margin: 1.5rem 0rem 0rem 0rem;
   li{
-    color:#DC8A03;
+    color:#981C1E;
     font-family:"Gotham-Medium";
     font-size: 10.89px;
     a{
       color:#000;
       font-family:"Gotham-Medium";
       font-size: 10.89px;
+
     }
          
     &:not(:last-child){ 
@@ -807,10 +813,15 @@ padding: 3rem 3rem 3rem 4rem;
   .bodytext{
     padding: 0px 10rem;
     h1,h2,p,span{
-      text-align: center;
+     /* text-align: center;
       margin-bottom: 20px;
       display: block;
-      clear: both;
+      clear: both;*/
+      text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    clear: both;
+      
     }
     h1{
       font-size: 36.3px;
@@ -830,7 +841,9 @@ padding: 3rem 3rem 3rem 4rem;
       font-size: 14.52px;
       font-family:"Gotham-Medium";   
       text-transform: uppercase;
-
+img{
+  margin-top: -5px;
+}
     }
     }
 }
@@ -859,9 +872,10 @@ img{
   z-index: 0;
   .jarallax-img {
     position: absolute;
-    object-fit: fill !important;
-    /* support for plugin https://github.com/bfred-it/object-fit-images */
-    font-family: 'object-fit: fill !important;';
+   // object-fit: fill !important;
+    //font-family: 'object-fit: fill !important;';
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
     top: 0;
     left: 0;
     width: 100%;
@@ -873,7 +887,7 @@ img{
 /*==============media-gallery css=================*/
 
 
-.media-gallery{
+.media-gallery,.report{
   img{
     object-fit: cover !important;
     font-family: 'object-fit: cover !important;';
@@ -907,7 +921,38 @@ img{
 }
 
 
+.report{
+  .subheader{
+    margin: 0 auto;
+  }
+a{
+  border-bottom: #A9A9A9 solid 2px;
+  padding: 1.25rem 0rem 1.5rem 0rem;
+  &:last-child{
+    border-bottom: none;
+  }
+  h2{
+    font-size: 18px;
+    font-family: "Gotham-Bold";
+    color: #981C1E;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0 ;
+  }
+  h3{
+    font-size: 18px;
+    font-family: "Gotham-Bold";
+    color: #000;
+    text-transform: capitalize;
+    padding: 0px;
+    margin: 0px;
+  }
+}
 
+.panel-wrapper{
+background: #E6E6E6;
+}
+}
 
 /*==============tabs css=================*/
 .tabs-title>a[aria-selected=true]{
@@ -1485,4 +1530,160 @@ background: #fff;
 .accordion-content,.tabs-content{
   padding: 2rem 9.5rem;
 }
+  }
+
+/*==============heritage page css=================*/
+  .heritage-container{
+    padding: 7rem;
+.jarallax{
+  min-height: 300px;
+  .jarallax-img{
+    padding-right: 0.8rem;
+  }
+}
+span.down{
+  font-family: "Gotham-Medium";
+  color: #6C6C6C;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+  img{
+    width: inherit;
+    height: auto;
+  }
+
+}
+h1{
+  font-size: 58.81px;
+  font-family: "Gotham-Black";
+  position: relative;
+  border-bottom: solid #FFC90F 2px;
+  display: block;
+  padding: 1rem 0rem 1rem 0.8rem;
+  margin: 0rem 0rem 1rem 0rem;
+  width: 230px;
+  &::after{
+    position: absolute;
+    left: -31px;
+    width: 35px;
+    height: 37px;
+    content: "";
+    bottom: -15px;
+    background: #FFC90F;
+    border-radius: 50%;
+  }
+
+}
+.strip-line{
+position: relative;
+&::before{
+  position: absolute;
+  left: -15px;
+  width: 2px;
+  height: 400px;
+  content: "";
+  bottom: 0;
+  background: #000;
+  top: 0;
+  z-index: -1;
+}
+.accordioncontent{
+  margin-left: -51vw;
+  background-image: none;
+  background-color: #fff;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  padding: 3rem 0rem;
+  .grid-x {
+    //padding: 2rem 7rem 2rem 7rem;
+    margin: 0 auto;
+  }
+  h2{
+    font-size: 25.41px;
+    font-family: "Gotham-Bold";
+    margin: 0px;
+    position: relative;
+    padding-right: 2rem;
+    &::after{
+      position: absolute;
+      right: 50%;
+      left: 50%;
+      border-top: solid #999999 2px;
+      content: "";
+      top: 50%;
+      bottom: 50%;
+      width: 70px;
+      margin-top: -6px;
+      margin-left: 1rem;
+    }
+  }
+  .strip{
+    font-size: 58.81px;
+    font-family: "Gotham-Black";
+    position: relative;
+    border-left: solid #FFC90F 2px;
+    padding-left: 2rem;
+    height: 100%;
+&::after{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  content: "";
+  top: 0;
+  background: #FFC90F;
+  border-radius: 50%;
+  margin-left: -14px;
+  margin-top: 0px;
+}
+  }
+  p,ul li{
+    font-size: 14.52px;
+    //margin-bottom: 0px;
+    font-family: "Bitter";
+  }
+  ul{
+    margin-left: 2rem;
+    li{
+      margin-bottom: 1rem;
+    }
+  }
+}
+.accordionheader{
+  position: relative;
+  font-size: 10.7px;
+  font-family: "Bitter";
+  color: #000;
+  width: 160px;
+  text-align: right;
+  display: block;
+  line-height: 45px;
+  text-transform: uppercase;
+&::before{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 11px;
+  content: '+';
+  background: #981C1E;
+  color: #fff;
+  font-size: 2rem;
+  display: table;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+}
+}
+p{
+font-size: 16.7px;
+font-family: "Bitter";
+padding-left: 0.8rem;
+}
+
+
   }
