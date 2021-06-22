@@ -194,11 +194,13 @@ header.show-for-small-only {
 
 header {
   background: #fff;
-  height: 74px; }
+  height: 74px;
+  clear: both;
+  display: block;
+  overflow: hidden; }
   header .logo {
     display: table;
     vertical-align: middle;
-    height: 74px;
     text-align: center;
     margin: 15px auto; }
   header .search_icon {
@@ -538,7 +540,9 @@ footer.bottom {
 .breadcrumbs-1 {
   background: #000;
   height: 50px;
-  margin: 0px; }
+  margin: 0px;
+  display: block;
+  clear: both; }
   .breadcrumbs-1 .center {
     display: table;
     height: 50px;
@@ -725,7 +729,8 @@ ul.tabs {
   margin-bottom: 2rem;
   -webkit-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
   -moz-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
-  box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3); }
+  box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
+  display: none; }
   .accordioncontent .closebutton {
     float: right;
     font-size: 40px;
@@ -946,7 +951,9 @@ ul.tabs {
       font-family: "Gotham-Bold"; }
 
 .our-partners-accordion {
-  background: #E2E2E2; }
+  background: #F0F0F0 !important; }
+  .our-partners-accordion .tabs-content {
+    background: #F0F0F0 !important; }
 
 .boardthumb {
   border: none;
@@ -1085,10 +1092,10 @@ ul.tabs {
 
 /*==============heritage page css=================*/
 .heritage-container {
-  padding: 7rem; }
-  .heritage-container .jarallax {
+  padding: 0rem 7rem 7rem 7rem; }
+  .heritage-container .jarallax, .heritage-container .jarallax-keep-img {
     min-height: 300px; }
-    .heritage-container .jarallax .jarallax-img {
+    .heritage-container .jarallax .jarallax-img, .heritage-container .jarallax-keep-img .jarallax-img {
       padding-right: 0.8rem; }
   .heritage-container span.down {
     font-family: "Gotham-Medium";
@@ -1100,53 +1107,105 @@ ul.tabs {
     .heritage-container span.down img {
       width: inherit;
       height: auto; }
-  .heritage-container h1 {
+  .heritage-container p {
+    font-size: 16.7px;
+    font-family: "Bitter";
+    padding-left: 0.8rem; }
+  .heritage-container .grid-x:nth-child(even) .large-6:first-child {
+    order: 2; }
+  .heritage-container .grid-x:nth-child(even) .large-6:last-child {
+    order: 1; }
+  .heritage-container .grid-x:nth-child(even) .jarallax, .heritage-container .grid-x:nth-child(even) .jarallax-keep-img {
+    margin-left: 2.8rem;
+    margin-top: 4rem; }
+    .heritage-container .grid-x:nth-child(even) .jarallax .jarallax-img, .heritage-container .grid-x:nth-child(even) .jarallax-keep-img .jarallax-img {
+      padding: 0px; }
+  .heritage-container .grid-x:nth-child(even) h1 {
     font-size: 58.81px;
     font-family: "Gotham-Black";
     position: relative;
-    border-bottom: solid #FFC90F 2px;
     display: block;
-    padding: 1rem 0rem 1rem 0.8rem;
-    margin: 0rem 0rem 1rem 0rem;
-    width: 230px; }
-    .heritage-container h1::after {
+    padding: 0rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
+    text-align: right; }
+    .heritage-container .grid-x:nth-child(even) h1::before {
+      border-bottom: solid #FFC90F 2px;
       position: absolute;
-      left: -31px;
+      content: "";
+      width: 247px;
+      bottom: 0px;
+      right: 0;
+      margin-right: -2.8rem; }
+    .heritage-container .grid-x:nth-child(even) h1::after {
+      position: absolute;
+      right: 0px;
       width: 35px;
       height: 37px;
       content: "";
-      bottom: -15px;
+      bottom: -20px;
       background: #FFC90F;
-      border-radius: 50%; }
-  .heritage-container .strip-line {
-    position: relative; }
-    .heritage-container .strip-line::before {
+      border-radius: 50%;
+      margin-right: -4rem; }
+  .heritage-container .grid-x:nth-child(even) .strip-line {
+    position: relative;
+    padding-right: 2.8rem;
+    padding-top: 4rem;
+    height: 100%; }
+    .heritage-container .grid-x:nth-child(even) .strip-line p {
+      clear: both;
+      display: block;
+      text-align: right;
+      padding-right: 0rem;
+      padding-left: 0rem; }
+    .heritage-container .grid-x:nth-child(even) .strip-line::before {
       position: absolute;
-      left: -15px;
-      width: 2px;
-      height: 400px;
+      right: -1px;
+      width: 1px;
       content: "";
       bottom: 0;
       background: #000;
       top: 0;
       z-index: -1; }
-    .heritage-container .strip-line .accordioncontent {
-      margin-left: -51vw;
+    .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent {
+      margin-left: -15vw;
       background-image: none;
       background-color: #fff;
       box-shadow: none;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
-      padding: 3rem 0rem; }
-      .heritage-container .strip-line .accordioncontent .grid-x {
+      padding: 3rem 0rem;
+      margin-top: 6rem; }
+      .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent .closebutton {
+        float: right;
+        padding: 0px;
+        background: #981C1E;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-top: -2%;
+        display: block;
+        clear: both;
+        position: absolute;
+        right: -10rem; }
+      .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent .grid-x {
         margin: 0 auto; }
-      .heritage-container .strip-line .accordioncontent h2 {
+      .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent p {
+        clear: both;
+        display: block;
+        text-align: left;
+        padding-right: 0rem;
+        padding-left: 0rem; }
+      .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent h2 {
         font-size: 25.41px;
         font-family: "Gotham-Bold";
         margin: 0px;
         position: relative;
         padding-right: 2rem; }
-        .heritage-container .strip-line .accordioncontent h2::after {
+        .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent h2::after {
           position: absolute;
           right: 50%;
           left: 50%;
@@ -1157,14 +1216,14 @@ ul.tabs {
           width: 70px;
           margin-top: -6px;
           margin-left: 1rem; }
-      .heritage-container .strip-line .accordioncontent .strip {
+      .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent .strip {
         font-size: 58.81px;
         font-family: "Gotham-Black";
         position: relative;
         border-left: solid #FFC90F 2px;
-        padding-left: 2rem;
+        padding-left: 3rem;
         height: 100%; }
-        .heritage-container .strip-line .accordioncontent .strip::after {
+        .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent .strip::after {
           position: absolute;
           left: 0;
           right: 0;
@@ -1176,28 +1235,30 @@ ul.tabs {
           border-radius: 50%;
           margin-left: -14px;
           margin-top: 0px; }
-      .heritage-container .strip-line .accordioncontent p, .heritage-container .strip-line .accordioncontent ul li {
+      .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent p, .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent ul li {
         font-size: 14.52px;
         font-family: "Bitter"; }
-      .heritage-container .strip-line .accordioncontent ul {
+      .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent ul {
         margin-left: 2rem; }
-        .heritage-container .strip-line .accordioncontent ul li {
+        .heritage-container .grid-x:nth-child(even) .strip-line .accordioncontent ul li {
           margin-bottom: 1rem; }
-    .heritage-container .strip-line .accordionheader {
+    .heritage-container .grid-x:nth-child(even) .strip-line .accordionheader {
       position: relative;
       font-size: 10.7px;
       font-family: "Bitter";
       color: #000;
       width: 160px;
-      text-align: right;
+      text-align: left;
       display: block;
       line-height: 45px;
-      text-transform: uppercase; }
-      .heritage-container .strip-line .accordionheader::before {
+      text-transform: uppercase;
+      float: right; }
+      .heritage-container .grid-x:nth-child(even) .strip-line .accordionheader::before {
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 11px;
+        right: 0px;
+        left: initial;
         content: '+';
         background: #981C1E;
         color: #fff;
@@ -1207,9 +1268,177 @@ ul.tabs {
         width: 45px;
         text-align: center;
         line-height: 45px; }
-  .heritage-container p {
+  .heritage-container .grid-x:nth-child(odd) .large-6:first-child {
+    order: 1; }
+  .heritage-container .grid-x:nth-child(odd) .large-6:last-child {
+    order: 2; }
+  .heritage-container .grid-x:nth-child(odd) p {
     font-size: 16.7px;
     font-family: "Bitter";
-    padding-left: 0.8rem; }
+    padding-left: 0rem;
+    display: block;
+    clear: both; }
+  .heritage-container .grid-x:nth-child(odd) .jarallax, .heritage-container .grid-x:nth-child(odd) .jarallax-keep-img {
+    margin-right: 2.8rem;
+    margin-top: 4rem; }
+    .heritage-container .grid-x:nth-child(odd) .jarallax .jarallax-img, .heritage-container .grid-x:nth-child(odd) .jarallax-keep-img .jarallax-img {
+      padding: 0px; }
+  .heritage-container .grid-x:nth-child(odd) h1 {
+    font-size: 58.81px;
+    font-family: "Gotham-Black";
+    position: relative;
+    display: block;
+    padding: 0rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
+    text-align: left; }
+    .heritage-container .grid-x:nth-child(odd) h1::before {
+      border-bottom: solid #FFC90F 2px;
+      position: absolute;
+      content: "";
+      width: 247px;
+      bottom: 0px;
+      left: 0;
+      margin-left: -2.8rem; }
+    .heritage-container .grid-x:nth-child(odd) h1::after {
+      position: absolute;
+      left: 0px;
+      width: 35px;
+      height: 37px;
+      content: "";
+      bottom: -20px;
+      background: #FFC90F;
+      border-radius: 50%;
+      margin-left: -4rem; }
+  .heritage-container .grid-x:nth-child(odd) .strip-line {
+    position: relative;
+    padding-left: 2.8rem;
+    padding-top: 4rem;
+    height: 100%; }
+    .heritage-container .grid-x:nth-child(odd) .strip-line::before {
+      position: absolute;
+      left: 0px;
+      width: 1px;
+      content: "";
+      bottom: 0;
+      background: #000;
+      top: 0;
+      z-index: -1; }
+    .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent {
+      margin-left: -53vw;
+      background-image: none;
+      background-color: #fff;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      padding: 3rem 0rem;
+      margin-top: 6rem; }
+      .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent .grid-x {
+        margin: 0 auto; }
+      .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent .closebutton {
+        float: right;
+        padding: 0px;
+        background: #981C1E;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-top: -2%;
+        display: block;
+        clear: both;
+        position: absolute;
+        right: -10rem; }
+      .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent p {
+        clear: both;
+        display: block;
+        text-align: left;
+        padding-right: 0rem;
+        padding-left: 0rem; }
+      .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent h2 {
+        font-size: 25.41px;
+        font-family: "Gotham-Bold";
+        margin: 0px;
+        position: relative;
+        padding-right: 2rem; }
+        .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent h2::after {
+          position: absolute;
+          right: 50%;
+          left: 50%;
+          border-top: solid #999999 2px;
+          content: "";
+          top: 50%;
+          bottom: 50%;
+          width: 70px;
+          margin-top: -6px;
+          margin-left: 1rem; }
+      .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent .strip {
+        font-size: 58.81px;
+        font-family: "Gotham-Black";
+        position: relative;
+        border-left: solid #FFC90F 2px;
+        padding-left: 3rem;
+        height: 100%; }
+        .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent .strip::after {
+          position: absolute;
+          left: 0;
+          right: 0;
+          width: 25px;
+          height: 25px;
+          content: "";
+          top: 0;
+          background: #FFC90F;
+          border-radius: 50%;
+          margin-left: -14px;
+          margin-top: 0px; }
+      .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent p, .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent ul li {
+        font-size: 14.52px;
+        font-family: "Bitter"; }
+      .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent ul {
+        margin-left: 2rem; }
+        .heritage-container .grid-x:nth-child(odd) .strip-line .accordioncontent ul li {
+          margin-bottom: 1rem; }
+    .heritage-container .grid-x:nth-child(odd) .strip-line .accordionheader {
+      position: relative;
+      font-size: 10.7px;
+      font-family: "Bitter";
+      color: #000;
+      width: 160px;
+      text-align: right;
+      display: block;
+      line-height: 45px;
+      text-transform: uppercase;
+      float: left; }
+      .heritage-container .grid-x:nth-child(odd) .strip-line .accordionheader::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: initial;
+        left: 0px;
+        content: '+';
+        background: #981C1E;
+        color: #fff;
+        font-size: 2rem;
+        display: table;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        line-height: 45px; }
+
+.jarallax-keep-img {
+  position: relative;
+  z-index: 0;
+  object-fit: contain !important;
+  font-family: 'object-fit: contain !important;'; }
+
+.jarallax-keep-img > .jarallax-img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: -100;
+  object-fit: contain !important;
+  font-family: 'object-fit: contain !important;'; }
 
 /*# sourceMappingURL=app.css.map */

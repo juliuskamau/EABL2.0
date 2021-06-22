@@ -143,8 +143,14 @@ $(document).ready(function(){
 
      jQuery(document).ready(function($) {
         $('.jarallax').jarallax({
-          //  speed: 0.5,
+          speed: 0.5,
+         
         });  
+
+        $('.jarallax-keep-img').jarallax({
+            keepImg: true,
+            speed: 0.5,
+          }); 
         $(window).resize(function() {
                 $('.jarallax').jarallax('onResize');
                     $('.jarallax').css('width', $(window).width() + 'px');
@@ -154,10 +160,6 @@ $(document).ready(function(){
                 $('.jarallax').css('width', $(window).width() + 'px');
                 });
     });
-
-
-
-    
 
 
             (function($) {
