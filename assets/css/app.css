@@ -470,6 +470,9 @@ footer.bottom {
     .carousel-people .panel a::after, .carousel-people-inner .panel a::after {
       display: none; }
 
+.carousel-people-inner {
+  margin-top: 2rem; }
+
 .owl-nav {
   /* position: absolute;
    top: 50%;
@@ -620,6 +623,8 @@ footer.bottom {
     width: 80%;
     margin: 0 auto;
     text-align: center; }
+  .brands-main-image .jarallax {
+    min-height: 365px; }
 
 /*==============jarallax css=================*/
 .jarallax {
@@ -783,6 +788,8 @@ ul.tabs {
     -webkit-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
     -moz-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
     box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3); }
+    .brand-tabs .accordionheader .jarallax {
+      min-height: 222px; }
     .brand-tabs .accordionheader img {
       margin: 0 auto; }
   .brand-tabs .tabs-panel {
@@ -894,13 +901,75 @@ ul.tabs {
   font-size: 21.79px;
   padding: 1rem 0; }
 
+.investor-page-main .button-big .large-6:first-child .button {
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  color: #000;
+  background: url(../img/arrow-brown.png) #fff;
+  background-repeat: no-repeat;
+  background-position: 93% center; }
+  .investor-page-main .button-big .large-6:first-child .button p {
+    color: #000;
+    margin-top: 1rem;
+    margin-bottom: 0rem; }
+  .investor-page-main .button-big .large-6:first-child .button:hover, .investor-page-main .button-big .large-6:first-child .button:focus {
+    background: url(../img/arrowbutton.png) #981C1E;
+    background-repeat: no-repeat;
+    background-position: 93% center;
+    color: #fff; }
+    .investor-page-main .button-big .large-6:first-child .button:hover p, .investor-page-main .button-big .large-6:first-child .button:focus p {
+      color: #fff; }
+.investor-page-main .button-big .large-6:last-child .button:hover, .investor-page-main .button-big .large-6:last-child .button:focus {
+  background: url(../img/arrow-brown.png) #fff;
+  background-repeat: no-repeat;
+  background-position: 93% center;
+  color: #000; }
+.investor-page-main .button-small .large-6:first-child .button {
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  color: #fff;
+  background: url(../img/arrowbutton.png) #DD8A03;
+  background-repeat: no-repeat;
+  background-position: 93% center; }
+  .investor-page-main .button-small .large-6:first-child .button p {
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 0rem; }
+  .investor-page-main .button-small .large-6:first-child .button:hover, .investor-page-main .button-small .large-6:first-child .button:focus {
+    background: url(../img/arrow-brown.png) #fff;
+    background-repeat: no-repeat;
+    background-position: 93% center;
+    color: #000; }
+    .investor-page-main .button-small .large-6:first-child .button:hover p, .investor-page-main .button-small .large-6:first-child .button:focus p {
+      color: #fff; }
+.investor-page-main .button-small .large-6:last-child .button {
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out; }
+  .investor-page-main .button-small .large-6:last-child .button:hover, .investor-page-main .button-small .large-6:last-child .button:focus {
+    background: url(../img/arrow-brown.png) #fff;
+    background-repeat: no-repeat;
+    background-position: 93% center;
+    color: #000; }
+.investor-page-main .button {
+  text-align: left;
+  padding: 3rem 10rem 3rem 3rem;
+  font-size: 25px; }
 .investor-page-main .quicklinkswrapper {
   margin: 2rem 0rem; }
   .investor-page-main .quicklinkswrapper .subheader {
-    padding: 0rem 0rem 2rem 0rem;
+    padding: 0rem 0rem 1.3rem 0rem;
     line-height: normal; }
   .investor-page-main .quicklinkswrapper .large-9 .button {
-    margin-bottom: 0px; }
+    background-color: #DD8A03;
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out; }
+    .investor-page-main .quicklinkswrapper .large-9 .button:hover, .investor-page-main .quicklinkswrapper .large-9 .button:focus {
+      background: url(../img/arrow-brown.png) #fff;
+      background-repeat: no-repeat;
+      background-position: 93% center;
+      color: #000; }
+      .investor-page-main .quicklinkswrapper .large-9 .button:hover p, .investor-page-main .quicklinkswrapper .large-9 .button:focus p {
+        color: #fff; }
 
 .our-bussiness-container p {
   font-size: 14.52px; }
@@ -1010,6 +1079,20 @@ ul.tabs {
   background: #F0F0F0;
   margin: 0px;
   width: 100%; }
+  [data-tabs-content|="leadership-carousel"] .close-button {
+    float: right;
+    padding: 0px;
+    background: #981C1E;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    display: block;
+    clear: both;
+    text-transform: uppercase; }
   [data-tabs-content|="leadership-carousel"] .tabs-panel.is-active {
     background: #fff;
     margin: 0px;

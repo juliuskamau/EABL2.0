@@ -2,6 +2,8 @@ $(document).foundation();
 $(document).ready(function(){
     $('.thumbnailcarousel .owl-carousel').owlCarousel(
         {
+           
+
             loop:true,
             margin:0,
             nav:true,
@@ -177,3 +179,5 @@ $(document).ready(function(){
                 });
               
               })(jQuery);
+
+ 
