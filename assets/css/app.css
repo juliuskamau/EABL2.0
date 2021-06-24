@@ -75,6 +75,10 @@ p {
   font-size: 20.78px;
   margin-bottom: 2rem; }
 
+a {
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out; }
+
 .bodytextcontent {
   padding: 20px 73px; }
 
@@ -107,7 +111,7 @@ body {
   -moz-box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3);
   box-shadow: 0px 10px 30px rgba(10, 10, 10, 0.3); }
   .panel .jarallax {
-    min-height: 506px; }
+    min-height: 470px; }
   .panel a {
     font-family: "Gotham-Bold";
     line-height: normal;
@@ -131,7 +135,9 @@ body {
       background-position: 20% 0%; }
     .panel a:hover::after {
       background-repeat: no-repeat;
-      background-position: 20% 98%; }
+      background-position: 20% 98%;
+      transition: 0.9s;
+      transform: rotatex(-360deg); }
   .panel p {
     color: #000000;
     font-family: "Bitter";
@@ -139,6 +145,87 @@ body {
   .panel img {
     display: block;
     clear: both; }
+
+.home-panel01 {
+  margin-bottom: 1.875rem; }
+  .home-panel01 .large-6:last-child .panel:first-child:hover {
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out; }
+    .home-panel01 .large-6:last-child .panel:first-child:hover a {
+      background: #981C1E;
+      color: #fff; }
+      .home-panel01 .large-6:last-child .panel:first-child:hover a::after {
+        background-position: 20% 50%; }
+  .home-panel01 .large-6:last-child .panel:first-child a {
+    margin-bottom: 1.875rem; }
+    .home-panel01 .large-6:last-child .panel:first-child a:hover {
+      background: #981C1E;
+      color: #fff; }
+      .home-panel01 .large-6:last-child .panel:first-child a:hover::after {
+        background-position: 20% 50%; }
+  .home-panel01 .large-6:last-child .panel:last-child a {
+    margin-bottom: 0px; }
+    .home-panel01 .large-6:last-child .panel:last-child a:hover {
+      background: #fff;
+      color: #000; }
+  .home-panel01 .large-6:first-child .panel:hover {
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out; }
+    .home-panel01 .large-6:first-child .panel:hover a {
+      background: #981C1E;
+      color: #fff; }
+      .home-panel01 .large-6:first-child .panel:hover a::after {
+        background-position: 20% 50%; }
+  .home-panel01 .large-6:first-child .panel a {
+    margin-bottom: 0px;
+    padding: 30px 90px 30px 40px; }
+    .home-panel01 .large-6:first-child .panel a:hover {
+      background: #981C1E;
+      color: #fff; }
+      .home-panel01 .large-6:first-child .panel a:hover::after {
+        background-position: 20% 50%; }
+
+.home-panels02 .large-4 span {
+  position: absolute;
+  bottom: 0;
+  font-size: 21.08px;
+  color: #fff;
+  text-align: center;
+  background: #CBAF19;
+  padding: 0.2rem 1.5rem;
+  font-family: "Gotham-Bold";
+  text-transform: uppercase; }
+.home-panels02 .large-4:nth-child(2) span {
+  background: #64CB19; }
+.home-panels02 .large-4:nth-child(1) .panel, .home-panels02 .large-4:nth-child(2) .panel {
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out; }
+  .home-panels02 .large-4:nth-child(1) .panel:hover, .home-panels02 .large-4:nth-child(2) .panel:hover {
+    background: #981C1E; }
+    .home-panels02 .large-4:nth-child(1) .panel:hover a, .home-panels02 .large-4:nth-child(2) .panel:hover a {
+      color: #fff; }
+      .home-panels02 .large-4:nth-child(1) .panel:hover a:after, .home-panels02 .large-4:nth-child(2) .panel:hover a:after {
+        background-position: 20% 50%; }
+  .home-panels02 .large-4:nth-child(1) .panel a, .home-panels02 .large-4:nth-child(2) .panel a {
+    font-size: 17.56px;
+    padding: 25px 90px 25px 40px; }
+.home-panels02 .large-4:nth-child(3) {
+  position: relative; }
+  .home-panels02 .large-4:nth-child(3) .panel {
+    position: relative;
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out; }
+    .home-panels02 .large-4:nth-child(3) .panel:first-child {
+      margin-bottom: 1.875rem; }
+    .home-panels02 .large-4:nth-child(3) .panel a {
+      font-size: 22.48px;
+      padding: 40px 90px 40px 40px; }
+    .home-panels02 .large-4:nth-child(3) .panel:hover {
+      background: #fff; }
+      .home-panels02 .large-4:nth-child(3) .panel:hover a {
+        color: #000; }
+        .home-panels02 .large-4:nth-child(3) .panel:hover a p {
+          color: #000; }
 
 .panel-yellow, .panel-brown {
   background: #DC8A03; }
@@ -163,7 +250,7 @@ body {
   min-height: 491px; }
 
 .panel-image .jarallax {
-  min-height: 366px; }
+  min-height: 300px; }
 
 .subheader {
   font-family: "Gotham-Bold";
@@ -411,6 +498,9 @@ footer.bottom {
     /*margin: 20px 0px 0px 0px;*/ }
     .thumbnailcarousel .owl-carousel .owl-nav {
       margin-top: 23px; }
+    .thumbnailcarousel .owl-carousel a:hover img {
+      transition: 0.9s;
+      transform: rotatey(-360deg); }
     .thumbnailcarousel .owl-carousel img {
       width: initial; }
 
@@ -437,38 +527,51 @@ footer.bottom {
       background-position: 50px 0px !important; }
   .carousel-people .jarallax, .carousel-people-inner .jarallax {
     min-height: 448px; }
-  .carousel-people .panel .bodytextwrapper, .carousel-people-inner .panel .bodytextwrapper {
-    padding: 3rem 3rem 3rem 4rem; }
-  .carousel-people .panel .subheader, .carousel-people-inner .panel .subheader {
-    text-align: right;
-    font-family: "Gotham-Black";
-    font-size: 24.59px;
-    margin: 0px;
-    padding: 0px;
-    display: block;
-    clear: both;
-    margin: 0px; }
-  .carousel-people .panel p, .carousel-people-inner .panel p {
-    font-size: 16.86px;
-    text-align: right;
-    display: block;
-    clear: both; }
-  .carousel-people .panel a, .carousel-people-inner .panel a {
-    font-family: "Gotham-Bold";
-    font-size: 17.56px;
-    display: block;
-    clear: both;
-    text-transform: uppercase;
-    background: #981C1E;
-    padding: 0px;
-    width: 200px;
-    height: 50px;
-    margin: 0px;
-    line-height: 50px;
-    color: #fff;
-    float: right; }
-    .carousel-people .panel a::after, .carousel-people-inner .panel a::after {
-      display: none; }
+  .carousel-people .panel, .carousel-people-inner .panel {
+    background: #fff;
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out; }
+    .carousel-people .panel:hover, .carousel-people-inner .panel:hover {
+      background: #981C1E; }
+      .carousel-people .panel:hover p, .carousel-people .panel:hover .subheader, .carousel-people-inner .panel:hover p, .carousel-people-inner .panel:hover .subheader {
+        color: #fff; }
+      .carousel-people .panel:hover a, .carousel-people-inner .panel:hover a {
+        background: #fff;
+        color: #000; }
+    .carousel-people .panel .bodytextwrapper, .carousel-people-inner .panel .bodytextwrapper {
+      padding: 3rem 3rem 3rem 4rem; }
+    .carousel-people .panel .subheader, .carousel-people-inner .panel .subheader {
+      text-align: right;
+      font-family: "Gotham-Black";
+      font-size: 24.59px;
+      margin: 0px;
+      padding: 0px;
+      display: block;
+      clear: both;
+      margin: 0px; }
+    .carousel-people .panel p, .carousel-people-inner .panel p {
+      font-size: 16.86px;
+      text-align: right;
+      display: block;
+      clear: both; }
+    .carousel-people .panel a, .carousel-people-inner .panel a {
+      font-family: "Gotham-Bold";
+      font-size: 17.56px;
+      display: block;
+      clear: both;
+      text-transform: uppercase;
+      background: #981C1E;
+      padding: 0px;
+      width: 200px;
+      height: 50px;
+      margin: 0px;
+      line-height: 50px;
+      color: #fff;
+      float: right;
+      -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+      transition: background-color .25s ease-out,color .25s ease-out; }
+      .carousel-people .panel a::after, .carousel-people-inner .panel a::after {
+        display: none; }
 
 .carousel-people-inner {
   margin-top: 2rem; }
@@ -520,7 +623,8 @@ footer.bottom {
   background: #DC8A03;
   text-transform: uppercase;
   font-size: 32.32px;
-  padding-left: 3.3rem; }
+  padding-left: 3.3rem;
+  animation-name: none; }
 
 /*==============breadcrumbs css=================*/
 .breadcrumbs-3 {
@@ -901,17 +1005,33 @@ ul.tabs {
   font-size: 21.79px;
   padding: 1rem 0; }
 
+.investor-page-main .carousel-people .panel a {
+  text-align: center; }
+.investor-page-main .panel02 a {
+  font-size: 18.16px;
+  padding: 20px 60px 20px 20px;
+  background-color: #fff;
+  margin-bottom: 0rem; }
+.investor-page-main .panel02 .jarallax {
+  min-height: 279px; }
+.investor-page-main .button-big .large-6:last-child .button {
+  padding: 5rem 10rem 5rem 3rem;
+  font-size: 27px;
+  line-height: 2rem; }
 .investor-page-main .button-big .large-6:first-child .button {
   -webkit-transition: background-color .25s ease-out,color .25s ease-out;
   transition: background-color .25s ease-out,color .25s ease-out;
   color: #000;
   background: url(../img/arrow-brown.png) #fff;
   background-repeat: no-repeat;
-  background-position: 93% center; }
+  background-position: 93% center;
+  font-size: 27px;
+  line-height: 2rem; }
   .investor-page-main .button-big .large-6:first-child .button p {
     color: #000;
     margin-top: 1rem;
-    margin-bottom: 0rem; }
+    margin-bottom: 0rem;
+    font-size: 17px; }
   .investor-page-main .button-big .large-6:first-child .button:hover, .investor-page-main .button-big .large-6:first-child .button:focus {
     background: url(../img/arrowbutton.png) #981C1E;
     background-repeat: no-repeat;
@@ -1157,7 +1277,6 @@ ul.tabs {
     top: 50%;
     right: 2rem;
     margin-top: -.5rem;
-    content: '+';
     background: #981C1E;
     padding: .2rem 0.8rem;
     color: #fff;
@@ -1523,5 +1642,18 @@ ul.tabs {
   z-index: -100;
   object-fit: contain !important;
   font-family: 'object-fit: contain !important;'; }
+
+.owl-carousel .owl-item.active h1, .owl-carousel .owl-item.active p, .owl-carousel .owl-item.active .button {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 0.3s; }
+.owl-carousel .owl-item.active h1 {
+  animation-name: fadeInDown; }
+.owl-carousel .owl-item.active p {
+  animation-name: fadeInLeft; }
+.owl-carousel .owl-item.active .button {
+  animation-name: fadeInUp; }
 
 /*# sourceMappingURL=app.css.map */

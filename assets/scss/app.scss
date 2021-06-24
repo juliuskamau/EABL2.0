@@ -124,6 +124,10 @@ p{
   font-size: 20.78px;
   margin-bottom: 2rem;
 }
+a{
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out;
+}
 .bodytextcontent{
   padding: 20px 73px;
 }
@@ -160,7 +164,7 @@ body{
  -moz-box-shadow:    0px 10px 30px rgba(10, 10, 10, 0.3);
  box-shadow:         0px 10px 30px rgba(10, 10, 10, 0.3);
  .jarallax  {
-  min-height: 506px;
+  min-height: 470px;
 }
   a{
     font-family: "Gotham-Bold";
@@ -188,6 +192,8 @@ body{
       &::after{
         background-repeat: no-repeat;
         background-position: 20% 98%;
+        transition: 0.9s;
+        transform: rotatex(-360deg);
       }
     }
 
@@ -204,6 +210,143 @@ body{
    // width: 100%;
   }
  }
+ .home-panel01{
+  margin-bottom: 1.875rem;
+  .large-6{
+&:last-child{
+  .panel{
+    &:first-child{
+      &:hover{
+        -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+        transition: background-color .25s ease-out,color .25s ease-out;
+a{
+    background: #981C1E;
+    color: #fff;
+   &::after{
+    background-position: 20% 50%;
+   }
+  
+}
+      }
+      a{
+        margin-bottom: 1.875rem;
+        &:hover{
+          background: #981C1E;
+          color: #fff;
+         &::after{
+          background-position: 20% 50%;
+         }
+        }
+      }
+    }
+    &:last-child{
+      a{
+        margin-bottom: 0px;
+&:hover{
+  background: #fff;
+  color: #000;
+}
+      }
+    }
+  }
+
+}
+&:first-child{
+  .panel{
+    &:hover{
+      -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+      transition: background-color .25s ease-out,color .25s ease-out;
+a{
+  background: #981C1E;
+  color: #fff;
+ &::after{
+  background-position: 20% 50%;
+ }
+
+}
+    }
+    a{
+      margin-bottom: 0px;
+      padding: 30px 90px 30px 40px;
+      &:hover{
+        background: #981C1E;
+        color: #fff;
+        &::after{
+          background-position: 20% 50%;
+         }
+      }
+    }
+  }
+}
+  }
+ }
+ .home-panels02{
+.large-4{
+  span{
+    position: absolute;
+    bottom: 0;
+    font-size: 21.08px;
+    color: #fff;
+    text-align: center;
+    background: #CBAF19;
+    padding: 0.2rem 1.5rem;
+    font-family: "Gotham-Bold";
+    text-transform: uppercase;
+  } 
+  &:nth-child(2){
+   span{
+    background: #64CB19;
+   }
+  }
+&:nth-child(1),&:nth-child(2){
+  .panel{
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out;
+    &:hover{
+      background: #981C1E;
+      a{
+        color: #fff;
+        &:after{
+          background-position: 20% 50%;
+        }
+      }
+    }
+    a{
+      font-size: 17.56px;
+      padding: 25px 90px 25px 40px;
+    }
+  }
+}
+&:nth-child(3){
+  position: relative;
+  .panel{
+ position: relative;
+ -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+ transition: background-color .25s ease-out,color .25s ease-out;
+ &:first-child{
+  margin-bottom: 1.875rem;
+ }
+ &:last-child{
+
+ }
+    a{
+      font-size: 22.48px; 
+      padding: 40px 90px 40px 40px;
+    }
+    &:hover{
+      background: #fff;
+      a{
+        color: #000;
+        p{
+          color: #000; 
+        }
+      }
+    }
+  }
+}
+}
+ }
+
 .panel-yellow,.panel-brown{
   background: #DC8A03;
   
@@ -257,7 +400,7 @@ a{
 
 .panel-image{
 .jarallax  {
-  min-height: 366px;
+  min-height: 300px;
 }
 }
  .subheader{
@@ -414,6 +557,7 @@ h1{
         margin: 0px;
         line-height: 33px;
       }
+
     }
   }
 
@@ -570,6 +714,14 @@ padding: 0px 40px;
   //height: 75px;
   margin-top: 23px;
 }
+a{
+&:hover{
+ img{
+  transition: 0.9s;
+  transform: rotatey(-360deg);
+ }
+}
+}
 img{
   width: initial;
 }
@@ -606,8 +758,23 @@ img{
     min-height: 448px;
   }
 .panel{
+  background: #fff;
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out;
+&:hover{
+  background: #981C1E;
+
+  p,.subheader{
+    color: #fff;
+  }
+a{
+  background: #fff;
+  color:#000
+}
+}
   .bodytextwrapper{
 padding: 3rem 3rem 3rem 4rem;
+
   }
   .subheader{
     text-align: right;
@@ -639,6 +806,8 @@ padding: 3rem 3rem 3rem 4rem;
     line-height: 50px;
     color:#fff;
     float: right;
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out;
     &::after{
      display:none
     }
@@ -718,6 +887,7 @@ padding: 3rem 3rem 3rem 4rem;
         text-transform: uppercase;
         font-size: 32.32px;
         padding-left: 3.3rem;
+        animation-name: none;
       }
     }
   }
@@ -1279,8 +1449,31 @@ padding: 1rem 0;
 
 
 .investor-page-main{
+  .carousel-people{
+    .panel a{
+      text-align: center;
+    }
+  }
+  .panel02{
+    a{
+      font-size: 18.16px;
+      padding: 20px 60px 20px 20px;
+      background-color: #fff;
+      margin-bottom: 0rem;
+    }
+    .jarallax{
+      min-height: 279px;
+    }
+  }
   .button-big{
     .large-6{
+      &:last-child{
+        .button{
+          padding: 5rem 10rem 5rem 3rem;
+          font-size: 27px;
+          line-height: 2rem;
+        }
+      }
 &:first-child{
   .button{
    // background-color:  #fff;
@@ -1290,10 +1483,13 @@ padding: 1rem 0;
     background: url(../img/arrow-brown.png) #fff;
     background-repeat: no-repeat;
     background-position: 93% center;
+    font-size: 27px;
+    line-height: 2rem;
     p{
       color:#000 ;
       margin-top:1rem ;
       margin-bottom: 0rem;
+      font-size: 17px;
     }
     &:hover,&:focus{
       background: url(../img/arrowbutton.png) #981C1E;
@@ -1650,7 +1846,7 @@ a.accordion-title,a.tabs-title{
     top: 50%;
     right: 2rem;
     margin-top: -.5rem;
-    content: '+';
+   // content: '+';
     background: #981C1E;
     padding: .2rem 0.8rem;
     color: #fff;
@@ -2112,4 +2308,27 @@ padding-left: 0.8rem;
     z-index: -100;
     object-fit: contain !important;
     font-family: 'object-fit: contain !important;';
+}
+
+.owl-carousel{
+  .owl-item{
+    &.active{
+      h1,p,.button{
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 0.3s;
+      }
+      h1{
+        animation-name: fadeInDown;
+      }
+      p{
+        animation-name: fadeInLeft;
+      }
+      .button{
+        animation-name: fadeInUp;
+      }
+    }
+  }
 }
